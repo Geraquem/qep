@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">qep</string>
+
+    <string name="content_description">image</string>
+
+    <!-- ADS -->
+    <string name="banner">aaaaaaaaaaaaaaaaaaaa</string>
+    <string name="interstitial">aaaaaaaaaaaaaaaaaaaa</string>
+
+    <!-- ERROR -->
+    <string name="error_title">Ha ocurrido un problema</string>
+    <string name="error_description">Por favor, inténtalo de nuevo más tarde</string>
+    <string name="error_btn">Aceptar</string>
+
+</resources>
