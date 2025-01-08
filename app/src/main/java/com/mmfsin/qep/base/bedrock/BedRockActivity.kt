@@ -5,14 +5,13 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.WindowInsetsControllerCompat
-import androidx.core.view.isVisible
 import androidx.navigation.fragment.NavHostFragment
-import com.google.android.gms.ads.AdRequest
 import com.mmfsin.qep.R
 import com.mmfsin.qep.databinding.ActivityBedrockBinding
 import com.mmfsin.qep.utils.BEDROCK_BOOLEAN_ARGS
 import com.mmfsin.qep.utils.BEDROCK_STR_ARGS
 import com.mmfsin.qep.utils.ROOT_ACTIVITY_NAV_GRAPH
+import com.mmfsin.qep.utils.showErrorDialog
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -66,25 +65,14 @@ class BedRockActivity : AppCompatActivity() {
     }
 
     private fun setAds() {
-        val adRequest = AdRequest.Builder().build()
-        binding.adView.loadAd(adRequest)
+//        val adRequest = AdRequest.Builder().build()
+//        binding.adView.loadAd(adRequest)
         showBanner(visible = false)
     }
 
     fun showBanner(visible: Boolean = false) {
-        binding.adView.isVisible = visible
+//        binding.adView.isVisible = visible
     }
 
     private fun error() = showErrorDialog(goBack = true)
-
-    @Deprecated("Deprecated in Java")
-    override fun onBackPressed() {
-        val count = supportFragmentManager.backStackEntryCount
-        if (count == 0) {
-            if (inDashboard) {
-                val dialog = ExitDialog() { super.onBackPressed() }
-                dialog.show(supportFragmentManager, "")
-            } else super.onBackPressed()
-        } else super.onBackPressed()
-    }
 }

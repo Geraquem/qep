@@ -1,4 +1,4 @@
-package com.mmfsin.estereotipia.base
+package com.mmfsin.qep.base
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

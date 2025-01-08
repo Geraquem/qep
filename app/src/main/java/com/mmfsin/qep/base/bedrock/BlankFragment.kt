@@ -1,9 +1,9 @@
-package com.mmfsin.estereotipia.base.bedrock
+package com.mmfsin.qep.base.bedrock
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.mmfsin.estereotipia.base.BaseFragmentNoVM
-import com.mmfsin.estereotipia.databinding.FragmentBlankBinding
+import com.mmfsin.qep.base.BaseFragmentNoVM
+import com.mmfsin.qep.databinding.FragmentBlankBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

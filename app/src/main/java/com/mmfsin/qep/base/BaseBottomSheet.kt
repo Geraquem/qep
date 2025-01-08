@@ -1,4 +1,4 @@
-package com.mmfsin.estereotipia.base
+package com.mmfsin.qep.base
 
 import android.os.Bundle
 import android.view.LayoutInflater
